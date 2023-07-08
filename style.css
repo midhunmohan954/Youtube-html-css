@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+
+  padding-left: 75px;
+  background-color: rgb(247, 246, 246);
+}
+
+.thumbnail {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.video-preview {
+  /* display: inline-block; */
+  margin-right: 14px;
+  line-height: 14x;
+  position: relative;
+}
+
+.video-title {
+  width: 250px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* .video-info,
+.channel-picture {
+  vertical-align: top;
+  margin-top: 8px;
+} */
+.video-details-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.video-auther {
+  font-family: Roboto, Arial, sans-serif;
+  color: #606060;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.video-views {
+  font-family: Roboto, Arial, sans-serif;
+  color: #606060;
+  font-size: 12px;
+}
+.video-grid {
+  display: grid;
+  margin: 0 10px 0 12px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.thumbnail-row {
+  /* padding-bottom: 12px; */
+  margin-bottom: 10px;
+  position: relative;
+}
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 8px;
+  bottom: 20px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 4px 2px 4px;
+  border-radius: 2px;
+}
+@media (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 701px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
